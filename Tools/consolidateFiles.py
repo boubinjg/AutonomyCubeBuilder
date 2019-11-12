@@ -20,6 +20,14 @@ src = args.src
 for dir_name in os.listdir(src):
 	src_files = src + dir_name+"/"
 	for file_name in os.listdir(src_files):
+		randomString = ''.join([random.choice(string.ascii_letters + string.digits) for n in xrange(32)])
+		rnddst = src_files+ randomString + ".jpg"
+		rndsrc = src_files + file_name
+		os.rename(rndsrc,rnddst)
+		
+for dir_name in os.listdir(src):
+	src_files = src + dir_name+"/"
+	for file_name in os.listdir(src_files):
 		full_file_name = os.path.join(src_files, file_name)
     		if os.path.isfile(full_file_name):
     	   		shutil.copy(full_file_name, dest)
