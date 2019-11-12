@@ -6,7 +6,7 @@ import argparse
 Script which consolidates all files from a given path into one generic directory.
 
 Example: 
-Given a dataset which is broken up into Sortes, will go through each Sorte and copy all the pictures into one single larger directory.
+Given a dataset which is broken up into Sortes, will go through each Sorte and copy all the pictures, and give them random names, the compile them into one single larger directory.
 """
 
 parser = argparse.ArgumentParser()
