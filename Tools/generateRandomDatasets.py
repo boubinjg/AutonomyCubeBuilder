@@ -4,6 +4,16 @@ import argparse
 import string
 import random
 
+"""
+	This program will generate random data sets from a given input. BEWARE, it will change the names of the 
+	given files to random names, then copythem into a big pool, and then generate datasets out of that big pool.
+	
+	Inputs: 
+	src - Parent Directory with data
+	dest - Directory where you want your datasets to be placed
+	# Of Datasets - How many datasets you want
+	Lenght of Each Data Set - How many pictures should be in each dataset
+"""
 parser = argparse.ArgumentParser()
 parser.add_argument('src', type=str, help='Parent Directory that includes all the Sortes.')
 parser.add_argument('dest', type=str, help='Directory where you would like everything to be compiled to.')
