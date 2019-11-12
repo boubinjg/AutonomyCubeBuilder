@@ -21,6 +21,5 @@ for dir_name in os.listdir(src):
 	src_files = src + dir_name+"/"
 	for file_name in os.listdir(src_files):
 		full_file_name = os.path.join(src_files, file_name)
-		print(full_file_name)
     		if os.path.isfile(full_file_name):
     	   		shutil.copy(full_file_name, dest)
