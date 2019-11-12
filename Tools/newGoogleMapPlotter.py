@@ -21,7 +21,7 @@ gmap5 = gmplot.GoogleMapPlotter(lat[0],
                                 lon[0], 13) 
 
 for i in picId:
-    gmap5.marker(lat[i],lon[i],title=i)
+    gmap5.marker(lat[i],lon[i],title=(str(i)+" Lat: " + str(lat[i]) + " Long: " + str(lon[i])))
 
 gmap5.draw("output.html")
 
