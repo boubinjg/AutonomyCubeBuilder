@@ -6,7 +6,7 @@ import random
 
 """
 	This program will generate random data sets from a given input. BEWARE, it will change the names of the 
-	given files to random names, then copythem into a big pool, and then generate datasets out of that big pool.
+	given files to random names, then copy them into a big pool, and then generate datasets out of that big pool.
 	
 	Inputs: 
 	src - Parent Directory with data
